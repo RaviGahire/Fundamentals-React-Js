@@ -1,32 +1,76 @@
-# React + TypeScript + Vite
+# Botmakers Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **Description**
 
-Currently, two official plugins are available:
+This project is built with [Vite](https://vitejs.dev/) and [TypeScript](https://www.typescriptlang.org/), providing a blazing fast development environment and robust type safety. In this Assignment we cover all the basic topic of react js Ex. **State, Props, Keys, Events** etc. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting Started
 
-## React Compiler
+These instructions will get a copy of the project up and running on your local machine for development and testing purposes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the Oxlint configuration
+Ensure you have the following installed on your local machine:
+*   **Node.js** (v18.0.0 or higher recommended)
+*   **npm**
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Installation
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+1.  Clone the repository:
+    ```
+    bash
+    git clone [https://github.com/RaviGahire/Fundamentals-React-Js/tree/main/Botmakers]
+
+    ```
+
+2.  Navigate to the project directory:
+    ```bash
+    cd botmaker
+    ```
+
+3.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+## Development
+
+To start the Vite development server with Hot Module Replacement (HMR):
+
+```bash
+npm run dev
 ```
+>> The application will be available at http://localhost:5173 (or the next available port)
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+# 🛠️ Available Scripts
+* In the project directory, you can run the following commands:
+``` 
+npm run build 
+```
+``` 
+npm run preview
+```
+# 📂 Project Structure
+
+```
+├── public/             # Static assets that won't be processed by Vite
+├── src/                # Application source code
+│   ├── assets/         # Project-specific assets
+|   ├── assignment/     # React basic topic
+│   ├── components/     # Reusable components
+|   ├── layout/         # App Layout
+|   ├── routes/         # App routes    
+|   ├── App.tsx         # App main file
+│   ├── main.ts         # Application entry point
+│   └── index.css       # Global styles
+├── .gitignore          # Files and directories ignored by Git
+├── .oxlintrc.json      # oxlinter for code formating
+├── index.html          # Main HTML template
+├── package-lock.json   # Project packages and version
+├── package.json        # Project metadata and dependencies
+├── README.md           # Project Details
+├── tsconfig.app.json   # TypeScript version
+├── tsconfig.json       # TypeScript compiler options
+├── tsconfig.node.json  # TypeScript for node environment
+└── vite.config.ts      # Vite configuration file
+```
