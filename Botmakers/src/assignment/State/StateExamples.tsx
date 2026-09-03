@@ -6,11 +6,10 @@ import { LikeButton } from "./LikeButton";
 import { Preview } from "./Preview";
 import { ShowHide } from "./ShowHide";
 import { ToggleButton } from "./ToggleButton";
+import Footer from "../../components/Footer";
 
 export const StateExamples = () => {
-
   const [color,setColor] = useState(false)
-
   return (
     <div className="h-auto w-full pt-18 bg-zinc-900">
       <div className="flex items-center justify-around px-5 py-4 ">
@@ -41,6 +40,7 @@ export const StateExamples = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
