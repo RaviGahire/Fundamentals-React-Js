@@ -1,7 +1,19 @@
 import { IconDeviceMobile, IconExchange } from "@tabler/icons-react";
 import { Button } from "./buttons";
+import { Loader } from "../assignment/ConditionalRendering/Loader";
+import { useState } from "react";
 
 export const Hero = () => {
+  const [loading, setLoading] = useState(false);
+
+  setTimeout(() => {
+    setLoading(true);
+  }, 2000);
+
+  if (!loading) {
+    return <Loader />;
+  }
+
   return (
     <section
       aria-label="Hero-section"
